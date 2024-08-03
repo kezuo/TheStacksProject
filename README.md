@@ -1,1 +1,1 @@
-# TheStacksProject
+# For learning The Stacks Project
