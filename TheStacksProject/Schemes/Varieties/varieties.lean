@@ -7,10 +7,10 @@ Authors: Shujian Yan
 import Mathlib.Algebra.Field.Defs
 import Mathlib.AlgebraicGeometry.Scheme
 import Mathlib.AlgebraicGeometry.Morphisms.Separated
-import Mathlib.AlgebraicGeometry.Morphisms.FiniteType
 import Mathlib.AlgebraicGeometry.Morphisms.QuasiCompact
 import Mathlib.AlgebraicGeometry.Properties
 import TheStacksProject.Schemes.Schemes.base_change
+import TheStacksProject.Schemes.Morphisms.finite_type
 
 /-!
 Translated from https://stacks.math.columbia.edu/tag/020C
@@ -22,13 +22,11 @@ variable {κ: Type} [Field κ]
 variable {X S: Scheme}
 variable (f: X ⟶ S)
 
-class OfFiniteType extends LocallyOfFiniteType f, QuasiCompact f: Prop
-
 /-!
 ## References
 * https://stacks.math.columbia.edu/tag/020D
 -/
-class Variety (_: SchemeOver f) [OfFiniteType f] [IsIntegral X] [IsSeparated f]: Prop
+class Variety (_: SchemeOver f) [IsFiniteType f] [IsIntegral X] [IsSeparated f]: Prop
 
 
 end AlgebraicGeometry
