@@ -11,6 +11,7 @@ import Mathlib.AlgebraicGeometry.Morphisms.QuasiCompact
 import Mathlib.AlgebraicGeometry.Properties
 import TheStacksProject.Schemes.Schemes.base_change
 import TheStacksProject.Schemes.Morphisms.finite_type
+import TheStacksProject.other.gaussian_rational
 
 /-!
 Translated from https://stacks.math.columbia.edu/tag/020C
@@ -28,5 +29,6 @@ variable (f: X ⟶ S)
 -/
 class Variety (_: SchemeOver f) [IsFiniteType f] [IsIntegral X] [IsSeparated f]: Prop
 
+def ℚ_i : Scheme := Spec (CommRingCat.of GaussianRational)
 
 end AlgebraicGeometry

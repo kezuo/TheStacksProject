@@ -3,3 +3,4 @@
 import TheStacksProject.Schemes.Schemes.base_change
 import TheStacksProject.Schemes.Morphisms.finite_type
 import TheStacksProject.Schemes.Varieties.varieties
+import TheStacksProject.other.gaussian_rational
