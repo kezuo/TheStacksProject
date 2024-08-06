@@ -29,6 +29,4 @@ variable (f: X ⟶ S)
 -/
 class Variety (_: SchemeOver f) [IsFiniteType f] [IsIntegral X] [IsSeparated f]: Prop
 
-def ℚ_i : Scheme := Spec (CommRingCat.of GaussianRational)
-
 end AlgebraicGeometry

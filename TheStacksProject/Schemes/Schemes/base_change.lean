@@ -28,6 +28,8 @@ SchemeOver.mk
 
 instance : Coe (SchemeOverRing f) (SchemeOver f) := ⟨SchemeOverRing.toSchemeOver⟩
 
+instance : Coe (X: Scheme) (SchemeOver X.id) := ⟨fun _ => SchemeOver.mk⟩
+
 instance : CoeSort (SchemeOver (f: (X: Scheme.{u}) ⟶ Y)) (Type u) where
   coe _:= X.carrier
 
